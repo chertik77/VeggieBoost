@@ -4,10 +4,9 @@
 
 .steps-container {
   height: 661px;
-  padding: 40px 20px 0 20px;
+  padding: 40px 20px 0;
   background-color: var(--fourth-brand-color);
   border-radius: 40px;
-  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 6 6' fill='none'%3E%3Ccircle cx='2.77718' cy='3.25906' r='2.51253' fill='%23A1C487' fill-opacity='0.69'/%3E%3C/svg%3E"); */
 }
 
 .step-title {
@@ -50,20 +49,6 @@
   line-height: 1;
   letter-spacing: -0.72px;
   margin-right: 14px;
-}
-
-.steps-item::before {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--primary-brand-color);
-  content: '1';
-  width: 40px;
-  height: 38px;
-  border-radius: 50%;
-  font-size: 18px;
-  line-height: 1;
-  letter-spacing: -0.72px;
 }
 
 .steps-item:nth-of-type(2)::before {
