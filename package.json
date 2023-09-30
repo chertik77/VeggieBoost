@@ -12,6 +12,7 @@
   "devDependencies": {
     "eslint": "^8.49.0",
     "glob": "^10.3.4",
+    "scroll-lock": "^2.1.5",
     "stylelint": "^15.10.3",
     "stylelint-config-standard": "^34.0.0",
     "vite": "^4.4.5",
@@ -21,7 +22,6 @@
     "vite-plugin-stylelint": "^5.1.1"
   },
   "dependencies": {
-    "modern-normalize": "^2.0.0",
-    "scroll-lock": "^2.1.5"
+    "modern-normalize": "^2.0.0"
   }
 }
