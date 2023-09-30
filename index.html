@@ -5,22 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VeggieBoost</title>
+    
+    <script type="module" crossorigin src="/VeggieBoost/assets/index-9ef616fb.js"></script>
+    <link rel="stylesheet" href="/VeggieBoost/assets/index-3df23b76.css">
   </head>
   <body>
     <header class="header">
-      <div class="header-container container">
-        <svg class="header-logo" width="16" height="16">
-          <use href="/VeggieBoost/assets/icons-78d2903a.svg#icon-logo"></use>
-        </svg>
-        <a href="./index.html" class="heder-logo-link">veggieboost</a>
-        <svg class="header-burger" width="24" height="24">
-          <use href="/VeggieBoost/assets/icons-78d2903a.svg#icon-burger"></use>
-        </svg>
-      </div>
-    </header>
+  <div class="header-container container">
+    <svg class="header-logo" width="16" height="16">
+      <use href="/VeggieBoost/assets/icons-78d2903a.svg#icon-logo"></use>
+    </svg>
+    <a href="./index.html" class="heder-logo-link">veggieboost</a>
+    <button class="header-burger-btn">
+      <svg class="header-burger-icon" width="24" height="24">
+        <use href="/VeggieBoost/assets/icons-78d2903a.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+<dialog id="header-modal" class="header-burger-modal">
+  <div class="header-modal-container">
+    <nav class="header-modal-nav"></nav>
+    <ul class="header-modal-nav-list">
+      <li class="header-modal-nav-list-item">
+        <a href="" class="header-modal-nav-list-link">How It Works</a>
+      </li>
+      <li class="header-modal-nav-list-item">
+        <a href="" class="header-modal-nav-list-link">Vegetables</a>
+      </li>
+      <li class="header-modal-nav-list-item">
+        <a href="" class="header-modal-nav-list-link">Contacts</a>
+      </li>
+      <li class="header-modal-nav-list-item">
+        <a href="" class="header-modal-nav-list-link">
+          <svg class="header-modal-cart" width="20" height="20">
+            <use href="/VeggieBoost/assets/icons-78d2903a.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</dialog>
+
     <main></main>
     <footer class="footer">
       <div class="footer-container container"></div>
     </footer>
+    
   </body>
 </html>
