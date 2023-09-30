@@ -16,6 +16,7 @@
   --primary-brand-color: rgb(161, 196, 135);
   --secondary-brand-color: rgb(119, 172, 99);
   --third-brand-color: rgb(252, 138, 17);
+  --transition-timings: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {

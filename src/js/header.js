@@ -1,12 +1,20 @@
-import { disablePageScroll } from 'scroll-lock';
+import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
-const headerBurgerBtn = document.querySelector('.header-burger-btn');
-const headerBurgerIcon = document.querySelector('.header-burger-icon');
-const headerBurgerModal = document.querySelector('#header-modal');
-headerBurgerBtn.addEventListener('click', onHeaderBurgerBtnClick);
+const headerBurgerIcon = document.querySelector('.js-header-burger-icon');
+const headerBurgerModal = document.querySelector('#js-header-modal');
+document.addEventListener('click', onHeaderBurgerBtnClick);
 
-function onHeaderBurgerBtnClick() {
-  headerBurgerModal.showModal();
-  disablePageScroll();
-  headerBurgerIcon.firstElementChild.href.baseVal = './img/icons.svg#icon-close';
+function onHeaderBurgerBtnClick(e) {
+  if (
+    e.target.classList.contains('js-header-burger-icon') ||
+    e.target.closest('js-header-burger-icon')
+  ) {
+    headerBurgerModal.showModal();
+    disablePageScroll();
+    headerBurgerIcon.firstElementChild.href.baseVal = './img/icons.svg#icon-close';
+  } else {
+    headerBurgerModal.close();
+    enablePageScroll();
+    headerBurgerIcon.firstElementChild.href.baseVal = './img/icons.svg#icon-burger';
+  }
 }
