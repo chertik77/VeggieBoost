@@ -90,6 +90,12 @@
   letter-spacing: -0.56px;
   text-transform: uppercase;
   rotate: -14deg;
+  transition: color var(--transition-timings), background-color var(--transition-timings);
+}
+
+.hero-shop-btn:is(:hover, :focus) {
+  color: var(--primary-brand-color);
+  background-color: var(--primary-text-color);
 }
 
 .hero-main-picture {

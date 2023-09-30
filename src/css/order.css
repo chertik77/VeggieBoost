@@ -1,0 +1,102 @@
+.order-section {
+  margin-bottom: 80px;
+}
+
+.order-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.order-veg-img {
+  width: 335px;
+  height: 158px;
+  margin-bottom: 20px;
+}
+
+.order-desc:first-of-type {
+  margin-bottom: 20px;
+}
+
+@media only screen and (width >= 768px) {
+  .order-section {
+    margin-bottom: 100px;
+  }
+
+  .order-wrapper {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .order-title {
+    width: 386px;
+    font-size: 40px;
+    line-height: 1.11;
+    letter-spacing: -1.6px;
+    margin-bottom: 0;
+  }
+
+  .order-veg-img {
+    width: 310px;
+    height: 176px;
+    margin-bottom: 0;
+  }
+
+  .order-text-wrapper {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  .order-desc {
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: -0.72px;
+  }
+
+  .order-desc:first-of-type {
+    width: 317px;
+    margin-bottom: 0;
+  }
+
+  .order-desc:last-of-type {
+    width: 279px;
+  }
+}
+
+@media only screen and (width >= 1280px) {
+  .order-section {
+    margin-bottom: 124px;
+  }
+
+  .order-title {
+    width: 614px;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -1.92px;
+  }
+
+  .order-picture {
+    margin-left: auto;
+  }
+
+  .order-veg-img {
+    width: 410px;
+    height: 170px;
+  }
+
+  .order-text-wrapper {
+    column-gap: 40px;
+  }
+
+  .order-desc:first-of-type {
+    width: 353px;
+  }
+
+  .order-desc:last-of-type {
+    width: 294px;
+  }
+}
