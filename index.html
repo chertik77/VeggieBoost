@@ -6,40 +6,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VeggieBoost</title>
     
-    <script type="module" crossorigin src="/VeggieBoost/assets/index-9ef616fb.js"></script>
-    <link rel="stylesheet" href="/VeggieBoost/assets/index-3df23b76.css">
+    <script type="module" crossorigin src="/VeggieBoost/assets/index-364645d2.js"></script>
+    <link rel="stylesheet" href="/VeggieBoost/assets/index-5b0a4e62.css">
   </head>
   <body>
     <header class="header">
   <div class="header-container container">
-    <svg class="header-logo" width="16" height="16">
-      <use href="/VeggieBoost/assets/icons-78d2903a.svg#icon-logo"></use>
-    </svg>
-    <a href="./index.html" class="heder-logo-link">veggieboost</a>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li>
+          <a href="" class="header-nav-link">How It Works</a>
+        </li>
+        <li>
+          <a href="" class="header-nav-link">Vegetables</a>
+        </li>
+        <li>
+          <a href="" class="header-nav-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="header-logo-wrapper">
+      <svg width="16" height="16">
+        <use href="/VeggieBoost/assets/icons-6427e135.svg#icon-logo"></use>
+      </svg>
+      <a href="./index.html" class="header-logo-link">veggieboost</a>
+    </div>
+    <button class="header-cart-btn">
+      <svg
+        class="header-icon-cart"
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+      >
+        <path
+          d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+          fill="#141414"
+          stroke="#141414"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+          fill="#141414"
+          stroke="#141414"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+        <path
+          d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+          fill="none"
+          stroke="#141414"
+          stroke-width="1.8"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
     <button class="header-burger-btn">
-      <svg class="header-burger-icon" width="24" height="24">
-        <use href="/VeggieBoost/assets/icons-78d2903a.svg#icon-burger"></use>
+      <svg class="js-header-burger-icon" width="24" height="24">
+        <use href="/VeggieBoost/assets/icons-6427e135.svg#icon-burger"></use>
       </svg>
     </button>
   </div>
 </header>
-<dialog id="header-modal" class="header-burger-modal">
+<dialog id="js-header-modal" class="header-burger-modal">
   <div class="header-modal-container">
     <nav class="header-modal-nav"></nav>
     <ul class="header-modal-nav-list">
-      <li class="header-modal-nav-list-item">
+      <li>
         <a href="" class="header-modal-nav-list-link">How It Works</a>
       </li>
-      <li class="header-modal-nav-list-item">
+      <li>
         <a href="" class="header-modal-nav-list-link">Vegetables</a>
       </li>
-      <li class="header-modal-nav-list-item">
+      <li>
         <a href="" class="header-modal-nav-list-link">Contacts</a>
       </li>
-      <li class="header-modal-nav-list-item">
-        <a href="" class="header-modal-nav-list-link">
-          <svg class="header-modal-cart" width="20" height="20">
-            <use href="/VeggieBoost/assets/icons-78d2903a.svg#icon-cart"></use>
+      <li>
+        <a href="">
+          <svg
+            class="header-modal-cart"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"
+              fill="rgb(255, 255, 255)"
+              stroke="rgb(255, 255, 255)"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"
+              fill="rgb(255, 255, 255)"
+              stroke="rgb(255, 255, 255)"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"
+              fill="none"
+              stroke="rgb(255, 255, 255)"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
           </svg>
         </a>
       </li>
