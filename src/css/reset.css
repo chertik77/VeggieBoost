@@ -1,0 +1,62 @@
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+dialog {
+  border: none;
+  padding: 0;
+}
+
+.container {
+  max-width: 375px;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+@media only screen and (width >= 768px) {
+  .container {
+    max-width: 768px;
+    padding-inline: 32px;
+  }
+}
+
+@media only screen and (width >= 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}

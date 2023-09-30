@@ -1,0 +1,43 @@
+.header-container {
+  padding-block: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.heder-logo-link {
+  color: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+
+.header-burger-btn {
+  margin-left: auto;
+}
+
+.header-burger-modal {
+  min-width: 100%;
+}
+
+.header-modal-container {
+  min-width: 100dvw;
+  height: calc(100dvh - 50px);
+  position: fixed;
+  top: 50px;
+  background-color: var(--primary-brand-color);
+}
+
+.header-modal-nav {
+  margin-top: 124px;
+}
+
+.header-modal-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+
+.header-modal-nav-list-link {
+  color: var(--primary-color);
+}
