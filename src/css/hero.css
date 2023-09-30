@@ -46,7 +46,7 @@
 
 .hero-reviews-item:nth-of-type(4) > p {
   color: var(--secondary-text-color);
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-weight: 500;
   line-height: 1;
   text-transform: uppercase;
@@ -85,7 +85,7 @@
   background-color: var(--secondary-color);
   border-radius: 50%;
   color: var(--third-brand-color);
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   line-height: 1.4;
   letter-spacing: -0.56px;
   text-transform: uppercase;
@@ -95,7 +95,7 @@
 .hero-main-picture {
   width: 303px;
   height: 236px;
-  margin: 0 auto 8px auto;
+  margin: 0 auto 8px;
 }
 
 .hero-tags {
@@ -108,7 +108,7 @@
 
 .hero-tag {
   color: var(--primary-color);
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 10px;
   font-weight: 500;
   line-height: 1.2;
