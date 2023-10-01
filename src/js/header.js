@@ -5,16 +5,13 @@ const headerBurgerModal = document.querySelector('#js-header-modal');
 document.addEventListener('click', onHeaderBurgerBtnClick);
 
 function onHeaderBurgerBtnClick(e) {
-  if (
-    e.target.classList.contains('js-header-burger-icon') ||
-    e.target.closest('js-header-burger-icon')
-  ) {
+  if (e.target.classList.contains('js-header-burger-icon') || e.target.tagName === 'use') {
     headerBurgerModal.showModal();
     disablePageScroll();
-    headerBurgerIcon.firstElementChild.href.baseVal = './img/icons.svg#icon-close';
+    headerBurgerIcon.firstElementChild.outerHTML = '<use href="./img/icons.svg#icon-close"></use>';
   } else {
     headerBurgerModal.close();
     enablePageScroll();
-    headerBurgerIcon.firstElementChild.href.baseVal = './img/icons.svg#icon-burger';
+    headerBurgerIcon.firstElementChild.outerHTML = '<use href="./img/icons.svg#icon-burger"></use>';
   }
 }
