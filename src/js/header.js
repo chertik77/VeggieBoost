@@ -22,6 +22,6 @@ function onHeaderBurgerBtnClick(e) {
     }
     headerBurgerModal.close();
     enablePageScroll();
-    headerBurgerIcon.firstElementChild.outerHTML = '<use href="./img/icons.svg#icon-burger"></use>';
+    headerBurgerIcon.firstElementChild.outerHTML = '<use href="./icons.svg#icon-burger"></use>';
   }
 }
