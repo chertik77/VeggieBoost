@@ -12,7 +12,7 @@ function onHeaderBurgerBtnClick(e) {
   ) {
     headerBurgerModal.showModal();
     disablePageScroll();
-    headerBurgerIcon.firstElementChild.outerHTML = '<use href="/VeggieBoost/icon-close.svg"></use>';
+    headerBurgerIcon.firstElementChild.outerHTML = '<use href="./icon-close.svg"></use>';
   } else {
     if (
       e.target.classList.contains('header-modal-container') ||
