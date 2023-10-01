@@ -16,6 +16,7 @@ function onHeaderBurgerBtnClick(e) {
     disablePageScroll();
     headerBurgerIcon.style.display = 'none';
     headerCloseIcon.style.display = 'block';
+    headerCloseIcon.style.stroke = 'var(--secondary-brand-color)';
   } else {
     if (
       e.target.classList.contains('header-modal-container') ||

@@ -22,6 +22,10 @@
   column-gap: 8px;
 }
 
+.header-logo {
+  fill: var(--secondary-brand-color);
+}
+
 .header-logo-link {
   font-weight: 700;
   text-transform: uppercase;
@@ -32,6 +36,7 @@
 }
 
 .header-burger-btn {
+  display: flex;
   margin-left: auto;
 }
 
@@ -47,11 +52,8 @@
   background-color: var(--primary-brand-color);
 }
 
-.header-modal-nav {
-  margin-top: 124px;
-}
-
 .header-modal-nav-list {
+  margin-top: 124px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,8 +64,8 @@
   color: var(--primary-color);
 }
 
-.header-modal-cart {
-  fill: var(--primary-color);
+.header-modal-icon-cart {
+  fill: none;
   stroke: var(--primary-color);
 }
 
@@ -83,6 +85,8 @@
   }
 
   .header-cart-btn {
+    fill: none;
+    stroke: var(--secondary-text-color);
     display: block;
     margin-left: auto;
   }
