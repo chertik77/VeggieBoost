@@ -2,7 +2,9 @@ import { disablePageScroll, enablePageScroll } from 'scroll-lock';
 
 const headerBurgerIcon = document.querySelector('.js-header-burger-icon');
 const headerBurgerModal = document.querySelector('#js-header-modal');
+const headerCloseIcon = document.querySelector('.js-header-icon-close');
 document.addEventListener('click', onHeaderBurgerBtnClick);
+headerCloseIcon.style.display = 'none';
 
 function onHeaderBurgerBtnClick(e) {
   if (
@@ -12,7 +14,8 @@ function onHeaderBurgerBtnClick(e) {
   ) {
     headerBurgerModal.showModal();
     disablePageScroll();
-    headerBurgerIcon.firstElementChild.outerHTML = '<use href="./icon-close.svg"></use>';
+    headerBurgerIcon.style.display = 'none';
+    headerCloseIcon.style.display = 'block';
   } else {
     if (
       e.target.classList.contains('header-modal-container') ||
@@ -22,6 +25,7 @@ function onHeaderBurgerBtnClick(e) {
     }
     headerBurgerModal.close();
     enablePageScroll();
-    headerBurgerIcon.firstElementChild.outerHTML = '<use href="./icons.svg#icon-burger"></use>';
+    headerBurgerIcon.style.display = 'block';
+    headerCloseIcon.style.display = 'none';
   }
 }
